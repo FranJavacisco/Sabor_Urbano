@@ -1,0 +1,19 @@
+/* Personalización adicional */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de los botones del menú móvil */
+#mobile-menu-button {
+    cursor: pointer;
+}
+
+/* Efectos AOS */
+a[data-aos='fade-up'] {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+a[data-aos='fade-up'].aos-animate {
+    opacity: 1;
+}
+
