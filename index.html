@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="./assets/styles/styles.css" rel="stylesheet">
 </head>
 
@@ -25,8 +26,10 @@
                         class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Ubicación</a>
                     <a href="#reservas"
                         class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Reservas</a>
-                    <a href="#galeria"
-                        class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Galería</a>
+                    <a href="#Sobre Nosotros"
+                        class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Sobre Nosotros</a>
+                        <a href="#Barra"
+                        class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Barra</a>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,148 +68,21 @@
         </div>
     </section>
 
-<!-- Especialidades del Chef -->
-<section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Especialidades del Chef</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Plato 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/salmon-plancha-costra-finas-hierbas.avif" alt="Salmón en Costra de Hierbas" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Salmón en Costra de Hierbas</h3>
-                    <p class="text-gray-600 mb-4">Salmón fresco con costra de hierbas aromáticas, acompañado de risotto de champiñones silvestres.</p>
-                    <p class="text-amber-600 font-bold">$32.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/Lomo de Res con Puré Trufado.jpg" alt="Lomo de Res con Puré Trufado" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Lomo de Res con Puré Trufado</h3>
-                    <p class="text-gray-600 mb-4">Lomo de res jugoso acompañado de un suave puré de papas con aceite de trufa y cebollas caramelizadas.</p>
-                    <p class="text-amber-600 font-bold">$28.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/paella de mariscos.jpg" alt="Paella de Mariscos" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Paella de Mariscos</h3>
-                    <p class="text-gray-600 mb-4">Arroz salteado con mariscos frescos como camarones, mejillones y calamares, con un toque de azafrán.</p>
-                    <p class="text-amber-600 font-bold">$36.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 4 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/Ravioli de Espinacas y Ricotta.avif" alt="Ravioli de Espinacas y Ricotta" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Ravioli de Espinacas y Ricotta</h3>
-                    <p class="text-gray-600 mb-4">Pasta fresca rellena de espinacas y ricotta, acompañada de una salsa de tomate casera.</p>
-                    <p class="text-amber-600 font-bold">$22.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 5 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/Tacos de Pescado Baja.avif" alt="Tacos de Pescado Baja" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Tacos de Pescado Baja</h3>
-                    <p class="text-gray-600 mb-4">Tacos de pescado empanizado con ensalada de col y salsa de aguacate al estilo Baja California.</p>
-                    <p class="text-amber-600 font-bold">$18.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 6 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/Pato a la Naranja.jpeg" alt="Pato a la Naranja" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Pato a la Naranja</h3>
-                    <p class="text-gray-600 mb-4">Pato asado con una salsa dulce de naranja, acompañado de papas rústicas al romero.</p>
-                    <p class="text-amber-600 font-bold">$40.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 7 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/Risotto de Trufa y Parmesano.jpg" alt="Risotto de Trufa y Parmesano" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Risotto de Trufa y Parmesano</h3>
-                    <p class="text-gray-600 mb-4">Arroz cremoso con infusión de trufa y queso parmesano rallado, servido con un toque de aceite de oliva.</p>
-                    <p class="text-amber-600 font-bold">$24.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 8 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/sopa de langosta.jpg" alt="Sopa de Langosta" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Sopa de Langosta</h3>
-                    <p class="text-gray-600 mb-4">Sopa cremosa de langosta con un toque de brandy y cebollinos frescos, perfecta para comenzar una comida especial.</p>
-                    <p class="text-amber-600 font-bold">$22.00</p>
-                </div>
-            </div>
-            
-            <!-- Plato 9 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
-                <div class="relative h-64">
-                    <img src="./assets/img/chef/Ensalada de Quinoa y Aguacate.jpg" alt="Ensalada de Quinoa y Aguacate" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Ensalada de Quinoa y Aguacate</h3>
-                    <p class="text-gray-600 mb-4">Ensalada fresca con quinoa, aguacate, tomates cherry, pepino y aderezo de limón y cilantro.</p>
-                    <p class="text-amber-600 font-bold">$14.00</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<!-- Menú Completo -->
-<section id="menu" class="py-20">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Nuestro Menú</h2>
-
-        <!-- Categorías del Menú -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <button class="menu-category-btn bg-amber-600 text-white px-6 py-2 rounded-full">Todos</button>
-            <button class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Entradas</button>
-            <button class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Principales</button>
-            <button class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Postres</button>
-            <button class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Bebidas</button>
-        </div>
-
-        <!-- Carrusel de Platos -->
-        <div class="menu-carousel">
-            <div class="slick-carousel">
+    <!-- Especialidades del Chef -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Especialidades del Chef</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Plato 1 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
                     <div class="relative h-64">
-                        <img src="/api/placeholder/400/300" alt="Salmón en Costra de Hierbas" class="w-full h-full object-cover" />
+                        <img src="./assets/img/chef/salmon-plancha-costra-finas-hierbas.avif"
+                            alt="Salmón en Costra de Hierbas" class="w-full h-full object-cover" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Salmón en Costra de Hierbas</h3>
-                        <p class="text-gray-600 mb-4">Salmón fresco con costra de hierbas aromáticas, acompañado de risotto de champiñones silvestres.</p>
+                        <p class="text-gray-600 mb-4">Salmón fresco con costra de hierbas aromáticas, acompañado de
+                            risotto de champiñones silvestres.</p>
                         <p class="text-amber-600 font-bold">$32.00</p>
                     </div>
                 </div>
@@ -214,11 +90,13 @@
                 <!-- Plato 2 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
                     <div class="relative h-64">
-                        <img src="/api/placeholder/400/300" alt="Lomo de Res con Puré Trufado" class="w-full h-full object-cover" />
+                        <img src="./assets/img/chef/Lomo de Res con Puré Trufado.jpg" alt="Lomo de Res con Puré Trufado"
+                            class="w-full h-full object-cover" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Lomo de Res con Puré Trufado</h3>
-                        <p class="text-gray-600 mb-4">Lomo de res jugoso acompañado de un suave puré de papas con aceite de trufa y cebollas caramelizadas.</p>
+                        <p class="text-gray-600 mb-4">Lomo de res jugoso acompañado de un suave puré de papas con aceite
+                            de trufa y cebollas caramelizadas.</p>
                         <p class="text-amber-600 font-bold">$28.00</p>
                     </div>
                 </div>
@@ -226,11 +104,13 @@
                 <!-- Plato 3 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
                     <div class="relative h-64">
-                        <img src="/api/placeholder/400/300" alt="Paella de Mariscos" class="w-full h-full object-cover" />
+                        <img src="./assets/img/chef/paella de mariscos.jpg" alt="Paella de Mariscos"
+                            class="w-full h-full object-cover" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Paella de Mariscos</h3>
-                        <p class="text-gray-600 mb-4">Arroz salteado con mariscos frescos como camarones, mejillones y calamares, con un toque de azafrán.</p>
+                        <p class="text-gray-600 mb-4">Arroz salteado con mariscos frescos como camarones, mejillones y
+                            calamares, con un toque de azafrán.</p>
                         <p class="text-amber-600 font-bold">$36.00</p>
                     </div>
                 </div>
@@ -238,11 +118,13 @@
                 <!-- Plato 4 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
                     <div class="relative h-64">
-                        <img src="/api/placeholder/400/300" alt="Ravioli de Espinacas y Ricotta" class="w-full h-full object-cover" />
+                        <img src="./assets/img/chef/Ravioli de Espinacas y Ricotta.avif"
+                            alt="Ravioli de Espinacas y Ricotta" class="w-full h-full object-cover" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Ravioli de Espinacas y Ricotta</h3>
-                        <p class="text-gray-600 mb-4">Pasta fresca rellena de espinacas y ricotta, acompañada de una salsa de tomate casera.</p>
+                        <p class="text-gray-600 mb-4">Pasta fresca rellena de espinacas y ricotta, acompañada de una
+                            salsa de tomate casera.</p>
                         <p class="text-amber-600 font-bold">$22.00</p>
                     </div>
                 </div>
@@ -250,66 +132,294 @@
                 <!-- Plato 5 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
                     <div class="relative h-64">
-                        <img src="/api/placeholder/400/300" alt="Tacos de Pescado Baja" class="w-full h-full object-cover" />
+                        <img src="./assets/img/chef/Tacos de Pescado Baja.avif" alt="Tacos de Pescado Baja"
+                            class="w-full h-full object-cover" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Tacos de Pescado Baja</h3>
-                        <p class="text-gray-600 mb-4">Tacos de pescado empanizado con ensalada de col y salsa de aguacate al estilo Baja California.</p>
+                        <p class="text-gray-600 mb-4">Tacos de pescado empanizado con ensalada de col y salsa de
+                            aguacate al estilo Baja California.</p>
                         <p class="text-amber-600 font-bold">$18.00</p>
                     </div>
                 </div>
 
-                <!-- Añadir más platos según sea necesario -->
+                <!-- Plato 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <div class="relative h-64">
+                        <img src="./assets/img/chef/Pato a la Naranja.jpeg" alt="Pato a la Naranja"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Pato a la Naranja</h3>
+                        <p class="text-gray-600 mb-4">Pato asado con una salsa dulce de naranja, acompañado de papas
+                            rústicas al romero.</p>
+                        <p class="text-amber-600 font-bold">$40.00</p>
+                    </div>
+                </div>
+
+                <!-- Plato 7 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <div class="relative h-64">
+                        <img src="./assets/img/chef/Risotto de Trufa y Parmesano.jpg" alt="Risotto de Trufa y Parmesano"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Risotto de Trufa y Parmesano</h3>
+                        <p class="text-gray-600 mb-4">Arroz cremoso con infusión de trufa y queso parmesano rallado,
+                            servido con un toque de aceite de oliva.</p>
+                        <p class="text-amber-600 font-bold">$24.00</p>
+                    </div>
+                </div>
+
+                <!-- Plato 8 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <div class="relative h-64">
+                        <img src="./assets/img/chef/sopa de langosta.jpg" alt="Sopa de Langosta"
+                            class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sopa de Langosta</h3>
+                        <p class="text-gray-600 mb-4">Sopa cremosa de langosta con un toque de brandy y cebollinos
+                            frescos, perfecta para comenzar una comida especial.</p>
+                        <p class="text-amber-600 font-bold">$22.00</p>
+                    </div>
+                </div>
+
+                <!-- Plato 9 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <div class="relative h-64">
+                        <img src="./assets/img/chef/Ensalada de Quinoa y Aguacate.jpg"
+                            alt="Ensalada de Quinoa y Aguacate" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ensalada de Quinoa y Aguacate</h3>
+                        <p class="text-gray-600 mb-4">Ensalada fresca con quinoa, aguacate, tomates cherry, pepino y
+                            aderezo de limón y cilantro.</p>
+                        <p class="text-amber-600 font-bold">$14.00</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Agregar la librería Slick para el carrusel -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.slick-carousel').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
+    <!-- Menú Completo -->
+    <section id="menu" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Nuestro Menú</h2>
+
+            <!-- Categorías del Menú -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="menu-category-btn bg-amber-600 text-white px-6 py-2 rounded-full">Todos</button>
+                <button
+                    class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Entradas</button>
+                <button
+                    class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Principales</button>
+                <button
+                    class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Postres</button>
+                <button
+                    class="menu-category-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-amber-600 hover:text-white transition-colors">Bebidas</button>
+            </div>
+
+            <!-- Carrusel de Platos -->
+            <div class="menu-carousel">
+                <div class="slick-carousel">
+                    <!-- Plato 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <div class="relative h-64">
+                            <img src="./assets/img/menu/salmon-plancha-costra-finas-hierbas.avif"
+                                alt="Salmón en Costra de Hierbas" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Salmón en Costra de Hierbas</h3>
+                            <p class="text-gray-600 mb-4">Salmón fresco con costra de hierbas aromáticas, acompañado de
+                                risotto de champiñones silvestres.</p>
+                            <p class="text-amber-600 font-bold">$32.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Plato 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <div class="relative h-64">
+                            <img src="./assets/img/menu/Lomo de Res con Puré Trufado.jpg"
+                                alt="Lomo de Res con Puré Trufado" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Lomo de Res con Puré Trufado</h3>
+                            <p class="text-gray-600 mb-4">Lomo de res jugoso acompañado de un suave puré de papas con
+                                aceite de trufa y cebollas caramelizadas.</p>
+                            <p class="text-amber-600 font-bold">$28.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Plato 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <div class="relative h-64">
+                            <img src="./assets/img/menu/paella de mariscos.jpg" alt="Paella de Mariscos"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Paella de Mariscos</h3>
+                            <p class="text-gray-600 mb-4">Arroz salteado con mariscos frescos como camarones, mejillones
+                                y calamares, con un toque de azafrán.</p>
+                            <p class="text-amber-600 font-bold">$36.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Plato 4 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <div class="relative h-64">
+                            <img src="./assets/img/menu/Ravioli de Espinacas y Ricotta.avif"
+                                alt="Ravioli de Espinacas y Ricotta" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Ravioli de Espinacas y Ricotta</h3>
+                            <p class="text-gray-600 mb-4">Pasta fresca rellena de espinacas y ricotta, acompañada de una
+                                salsa de tomate casera.</p>
+                            <p class="text-amber-600 font-bold">$22.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Plato 5 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                        <div class="relative h-64">
+                            <img src="./assets/img/menu/Tacos de Pescado Baja.avif" alt="Tacos de Pescado Baja"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Tacos de Pescado Baja</h3>
+                            <p class="text-gray-600 mb-4">Tacos de pescado empanizado con ensalada de col y salsa de
+                                aguacate al estilo Baja California.</p>
+                            <p class="text-amber-600 font-bold">$18.00</p>
+                        </div>
+                    </div>
+
+                    <!-- Añadir más platos según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agregar la librería Slick para el carrusel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slick-carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
                     }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
+                ]
+            });
         });
-    });
-</script>
+    </script>
 
     <!-- Galería -->
     <section id="galeria" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Galería</h2>
+            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Nuestra Barra</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Imagen de comida" class="w-full h-48 object-cover">
+                    <img src="./assets/img/barra/Whisky Sour.jpg" alt="Imagen de comida"
+                        class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold">Plato 1</h3>
-                        <p class="text-gray-600">Descripción del plato.</p>
+                        <h3 class="text-xl font-bold">Whisky Sour</h3><br>
+                        <p class="text-gray-600">El Whisky Sour (o Whiskey Sour) es un famoso cóctel que contiene
+                            Bourbon whisky, jugo de limón, azúcar y, opcionalmente, clara de huevo. Se agita y se sirve
+                            directamente o sobre hielo. Tradicionalmente se adorna con una rodaja de naranja y una
+                            cereza maraschino.</p>
+                        <p class="text-amber-600 font-bold">$18.00</p>
                     </div>
                 </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/barra/mojito.jpg" alt="Imagen de comida" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Mojito</h3><br>
+                        <p class="text-gray-600">Combina el clásico ron blanco BACARDÍ Carta Blanca con la vibrante
+                            frescura de la lima recién exprimida, coronándolo con hojas de menta y hielo. ¿El resultado?
+                            Nuestro BACARDÍ Mojito original: el cóctel de ron con sabor a verano, perfecto para
+                            disfrutar del atardecer.</p>
+                        <p class="text-amber-600 font-bold">$18.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/barra/Manhattan.jpg" alt="Imagen de comida" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Manhattan</h3><br>
+                        <p class="text-gray-600">El Manhattan ha logrado mantenerse como uno de los cócteles más
+                            populares del mundo durante más de un siglo. Esta bebida, que combina whisky, vermut dulce,
+                            bitters y una guarnición de cerezas al marrasquino , representa la escuela clásica, de los
+                            cócteles.</p>
+                        <p class="text-amber-600 font-bold">$18.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/barra/Espresso Martini.jpg" alt="Imagen de comida"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Espresso Martini</h3><br>
+                        <p class="text-gray-600">El cóctel consiste en una bebida fría que se elabora a partir de café
+                            espresso con azúcar, licor de café y vodka. Causa sensación entre los amantes del café,
+                            específicamente del espresso, pero también fuera de estos grupos debido al equilibrio que
+                            presentan los ingredientes empleados para prepararlo. En muchos casos, se afirma que se
+                            piden varios debido a que deja ese deseo de más, lo que nos indica que se trata de un cóctel
+                            delicioso.</p>
+                        <p class="text-amber-600 font-bold">$18.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/barra/Old Fashioned.jpg" alt="Imagen de comida"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Old Fashioned </h3><br>
+                        <p class="text-gray-600">El Old Fashioned es considerado el padre de los cócteles. Su nombre
+                            deja claro que es un cóctel de toda la vida, es un cóctel clásico que representa el
+                            equilibrio que se busca en la buena coctelería.
+                            Tiene dulce (lleva un terrón de azúcar), amargo (por la angostura bitters) y la mezcla debe
+                            permitir apreciar en toda su pureza los aromas del espirituoso (bourbon o whisky, aunque
+                            también puede hacerse con ron, tequila, brandy) </p>
+                        <p class="text-amber-600 font-bold">$18.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="./assets/img/barra/cosmopolitan.jpg" alt="Imagen de comida"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold">Cosmopolitan</h3><br>
+                        <p class="text-gray-600">El Cosmopolitan, también conocido como Cosmo, es un cóctel sofisticado
+                            y elegante con un toque frutal y novedoso. Su destilado base es el vodka. Aunque es
+                            considerado todo un clásico de la coctelería, su origen es bastante reciente y desconocido.
+                            No existe ningún bartender al que se le reconozca una autoría clara. Su creación se sitúa en
+                            los años 70 u 80 del pasado siglo, por lo que es bastante novedoso.</p>
+                        <p class="text-amber-600 font-bold">$18.00</p>
+                    </div>
+                </div>
+
                 <!-- Más imágenes de la galería... -->
             </div>
         </div>
@@ -344,18 +454,62 @@
                     <input type="datetime-local" class="w-full p-4 border border-gray-300 rounded-lg" />
                 </div>
                 <button type="submit"
-                    class="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition-colors">Reservar Ahora</button>
+                    class="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition-colors">Reservar
+                    Ahora</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="mb-2">Sabor Urbano | Restaurante de Cocina Fusión</p>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12 mt-16">
+    <div class="container mx-auto px-6 text-center md:text-left">
+        <!-- Información del Restaurante -->
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-2">Sabor Urbano</h2>
+            <p class="text-lg mb-4">Restaurante de Cocina Fusión | Disfruta de una experiencia única de sabores.</p>
             <p class="text-sm">© 2024 Todos los derechos reservados</p>
         </div>
-    </footer>
+
+        <!-- Menú de Navegación -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Enlaces</h3>
+                <ul>
+                    <li><a href="#home" class="hover:text-amber-600">Inicio</a></li>
+                    <li><a href="/assets/" class="hover:text-amber-600">Sobre Nosotros</a></li>
+                    <li><a href="#menu" class="hover:text-amber-600">Menú</a></li>
+                    <li><a href="#contact" class="hover:text-amber-600">Ubicacion</a></li>
+                    <li><a href="#contact" class="hover:text-amber-600">Barra</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Redes Sociales</h3>
+                <div class="flex space-x-6 justify-center md:justify-start">
+                    <a href="#" class="hover:text-amber-600"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-amber-600"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-amber-600"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Ubicación</h3>
+                <p>123 Calle Fusión, Ciudad Gourmet</p>
+                <p class="text-sm">Lunes - Domingo: 12:00 PM - 10:00 PM</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Suscríbete</h3>
+                <form action="#" method="POST" class="flex flex-col space-y-2">
+                    <input type="email" placeholder="Tu correo electrónico" class="p-2 rounded-md text-black" required>
+                    <button type="submit" class="bg-amber-600 text-white py-2 rounded-md hover:bg-amber-700 transition-colors"></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Créditos -->
+        <div class="text-sm text-gray-400">
+            <p>Diseñado por <a href="https://www.linkedin.com/in/francisco-lopez-cl/" class="text-amber-600 hover:underline">PanchoDev</a></p>
+        </div>
+    </div>
+</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
@@ -367,7 +521,7 @@
         });
     </script>
     <link href="./assets/js/script.js" rel="script">
-    
+
 </body>
 
 </html>
