@@ -69,3 +69,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 </script>
+
+// Barra de progreso
+window.onscroll = function () {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+};
+
+// Saludo según la hora
+function updateGreeting() {
+    const hour = new Date().getHours();
+    let greeting;
+
+    if (hour >= 5 && hour < 12) {
+        greeting = "¡Buenos días! El desayuno es la comida más importante.";
+    } else if (hour >= 12 && hour < 18) {
+        greeting = "¡Buenas tardes! No olvides reservar tu mesa para la cena.";
+    } else {
+        greeting = "¡Buenas noches! Disfruta de nuestra carta de cenas.";
+    }
+
+    document.getElementById("timeGreeting").innerHTML = `
+        ${greeting}<br>
+        <span style="font-size: 0.9em; color: var(--text-gray);">
+            ${new Date().toLocaleTimeString('es-ES')}
+        </span>
+    `;
+}
+
+// Actualizar el saludo cada minuto
+updateGreeting();
+setInterval(updateGreeting, 60000);
+
+// Animación suave para enlaces internos
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Formulario de newsletter
+document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    if (email) {
+        alert('¡Gracias por suscribirte! Pronto recibirás nuestras ofertas especiales.');
+        this.reset();
+    }
+});
+

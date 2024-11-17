@@ -28,8 +28,7 @@
                         class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Reservas</a>
                     <a href="#Sobre Nosotros"
                         class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Sobre Nosotros</a>
-                        <a href="#Barra"
-                        class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Barra</a>
+                    <a href="#Barra" class="text-gray-700 hover:text-amber-600 transition-colors duration-300">Barra</a>
                 </div>
                 <button id="mobile-menu-button" class="md:hidden text-gray-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,10 +68,13 @@
     </section>
 
     <!-- Especialidades del Chef -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Especialidades del Chef</h2>
+    <section class="relative bg-gray-50 py-20">
+        <!-- Parallax Background -->
+        <div class="parallax-bg"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white" data-aos="fade-up">Especialidades del Chef</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
                 <!-- Plato 1 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
                     <div class="relative h-64">
@@ -460,56 +462,98 @@
         </div>
     </section>
 
-<!-- Footer -->
-<footer class="bg-gray-800 text-white py-12 mt-16">
-    <div class="container mx-auto px-6 text-center md:text-left">
-        <!-- Información del Restaurante -->
-        <div class="mb-8">
-            <h2 class="text-3xl font-bold mb-2">Sabor Urbano</h2>
-            <p class="text-lg mb-4">Restaurante de Cocina Fusión | Disfruta de una experiencia única de sabores.</p>
-            <p class="text-sm">© 2024 Todos los derechos reservados</p>
-        </div>
+    <footer>
+        <div class="time-greeting" id="timeGreeting"></div>
 
-        <!-- Menú de Navegación -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Enlaces</h3>
-                <ul>
-                    <li><a href="#home" class="hover:text-amber-600">Inicio</a></li>
-                    <li><a href="/assets/" class="hover:text-amber-600">Sobre Nosotros</a></li>
-                    <li><a href="#menu" class="hover:text-amber-600">Menú</a></li>
-                    <li><a href="#contact" class="hover:text-amber-600">Ubicacion</a></li>
-                    <li><a href="#contact" class="hover:text-amber-600">Barra</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Redes Sociales</h3>
-                <div class="flex space-x-6 justify-center md:justify-start">
-                    <a href="#" class="hover:text-amber-600"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-amber-600"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="hover:text-amber-600"><i class="fab fa-twitter"></i></a>
+        <div class="footer-container">
+            <!-- Acerca del Restaurante -->
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p class="about-text">
+                    Bienvenidos a Sabor Urbano, donde la pasión por la gastronomía francesa se
+                    encuentra con la innovación culinaria moderna. Cada plato cuenta una historia de
+                    tradición y excelencia.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
                 </div>
             </div>
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Ubicación</h3>
-                <p>123 Calle Fusión, Ciudad Gourmet</p>
-                <p class="text-sm">Lunes - Domingo: 12:00 PM - 10:00 PM</p>
+
+            <!-- Horarios -->
+            <div class="footer-section">
+                <h3>Horarios</h3>
+                <table class="schedule-table">
+                    <tr>
+                        <td>Lunes - Jueves</td>
+                        <td>12:00 - 23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes - Sábado</td>
+                        <td>12:00 - 00:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>12:00 - 22:00</td>
+                    </tr>
+                </table>
+                <p style="color: var(--primary-gold); margin-top: 1rem;">
+                    * Horarios especiales en días festivos
+                </p>
             </div>
-            <div>
-                <h3 class="text-xl font-semibold mb-2">Suscríbete</h3>
-                <form action="#" method="POST" class="flex flex-col space-y-2">
-                    <input type="email" placeholder="Tu correo electrónico" class="p-2 rounded-md text-black" required>
-                    <button type="submit" class="bg-amber-600 text-white py-2 rounded-md hover:bg-amber-700 transition-colors"></button>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-info">
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+34912345678" style="color: inherit; text-decoration: none;">
+                            +34 912 345 678
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://maps.google.com" target="_blank"
+                            style="color: inherit; text-decoration: none;">
+                            Calle Gran Vía 123, Madrid
+                        </a>
+                    </p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email para ofertas especiales">
+                    <button class="btn-subscribe">Suscribirse</button>
                 </form>
+            </div>
+
+            <!-- Enlaces Rápidos -->
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <div class="quick-links">
+                    <a href="#">Menú</a>
+                    <a href="#">Reservas</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <a href="#" class="btn-reserve">Reservar Ahora</a>
             </div>
         </div>
 
         <!-- Créditos -->
-        <div class="text-sm text-gray-400">
-            <p>Diseñado por <a href="https://www.linkedin.com/in/francisco-lopez-cl/" class="text-amber-600 hover:underline">PanchoDev</a></p>
+        <div class="credits">
+            <p>© 2024 Sabor Urbano. Todos los derechos reservados.</p>
+            <p>
+                <a href="#" style="color: inherit; text-decoration: underline;">Política de Privacidad</a> |
+                <a href="#" style="color: inherit; text-decoration: underline;">Términos y Condiciones</a>
+            </p>
         </div>
-    </div>
-</footer>
+    </footer>
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
